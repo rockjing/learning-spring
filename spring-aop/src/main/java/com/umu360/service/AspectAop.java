@@ -22,7 +22,7 @@ public class AspectAop {
     /**
      * 申明切点，同时配置将要被aop过滤的业务类
      */
-    @Pointcut("execution (* com.lilin.maven.service.annotationaop.UserService.addUser(..))")
+    @Pointcut("execution (* com.umu360.service.UserService.addUser(..))")
     public void pointcut() {
     }
 
@@ -48,6 +48,7 @@ public class AspectAop {
 
     @Around("pointcut()")
     public Object doAround(ProceedingJoinPoint pjp) throws Throwable {
+
         System.out.println("doAround advice start");
         Object result = pjp.proceed();
         System.out.println("doAround advice end");
