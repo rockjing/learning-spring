@@ -15,6 +15,11 @@
 
 - 请见 SpringUtilTest 利用一个继承ApplicationContextAware的类实现动态获取某个Interface下面所有的实例
 但只能在spring应用中使用
+- 在Servlet容器中 则集成  implements ServletContextListener，使用 WebApplicationContextUtils
+```$xslt
+ApplicationContext ac = WebApplicationContextUtils.getWebApplicationContext(sc);
+Map<String, IMsgHandler> result = ac.getBeansOfType(IMsgHandler.class);
+```
 
 参考：
 *   [获取实现某个接口的所有实现类集合](https://blog.csdn.net/cyxinda/article/details/78586739) 
