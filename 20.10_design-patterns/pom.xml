@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.umu360</groupId>
-    <artifactId>design-patterns</artifactId>
+    <artifactId>20.10_design-patterns</artifactId>
     <dependencies>
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->

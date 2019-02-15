@@ -5,9 +5,10 @@
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
-        <module>spring-aop</module>
-        <module>springIOC-testNG</module>
-        <module>design-patterns</module>
+        <module>10.01_spring-aop</module>
+        <module>10.02_springIOC-testNG</module>
+        <module>20.10_design-patterns</module>
+        <module>00.20_custom-exception</module>
     </modules>
 
 

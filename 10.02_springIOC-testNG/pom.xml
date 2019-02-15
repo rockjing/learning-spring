@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.umu360</groupId>
-    <artifactId>springIOC-testNG</artifactId>
+    <artifactId>10.02_springIOC-testNG</artifactId>
 
     <dependencies>
 

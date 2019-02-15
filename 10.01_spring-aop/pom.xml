@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.umu360</groupId>
-    <artifactId>spring-aop</artifactId>
+    <artifactId>10.01_spring-aop</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
