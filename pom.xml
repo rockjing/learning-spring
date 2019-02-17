@@ -9,6 +9,7 @@
         <module>10.02_springIOC-testNG</module>
         <module>20.10_design-patterns</module>
         <module>00.20_custom-exception</module>
+        <module>10.03_Mockio_with_testNg</module>
     </modules>
 
 
@@ -43,12 +44,20 @@
 
 
     <dependencies>
+        <!-- tesNg 需要，每个项目都需要 -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testNg.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
 
     </dependencies>
 
