@@ -32,9 +32,9 @@ public   class AwardsCalculation {
 
     public List<AwardsItem> Calculation(Order order) throws AwardsException {
 
-        DistributionMode distributionMode = storeManager.getDistributionMode(order.StoreId);
+        DistributionMode distributionMode = storeManager.getDistributionModeByStoreId(order.StoreId);
 
-        return calculationProvider.get(distributionMode).calculateEachOrder(order);
+        return calculationProvider.get(distributionMode).calculateOnEachOrder(order);
 
     }
 

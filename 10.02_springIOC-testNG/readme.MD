@@ -24,3 +24,15 @@ Map<String, IMsgHandler> result = ac.getBeansOfType(IMsgHandler.class);
 参考：
 *   [获取实现某个接口的所有实现类集合](https://blog.csdn.net/cyxinda/article/details/78586739) 
 *  [SpringBoot 之 普通类获取Spring容器中的bean](https://www.cnblogs.com/s648667069/p/6489557.html)
+
+> 2019.02.24 
+[Spring 生命周期 各种初始化方法 执行顺序 ](https://blog.csdn.net/z69183787/article/details/78414659)
+
+通过 postConstruct 后期加载方式就替换了IUserProvider的真实实现，而改用一个我们定义的Mock实例了。
+```java
+@PostConstruct
+    public void postConstruct() {
+
+        this.userProvider = new AnotherUserProviderImpl();
+    }
+```
