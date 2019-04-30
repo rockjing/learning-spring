@@ -36,3 +36,20 @@ Map<String, IMsgHandler> result = ac.getBeansOfType(IMsgHandler.class);
         this.userProvider = new AnotherUserProviderImpl();
     }
 ```
+还有一种方式：
+[spring中使用mockito](https://www.cnblogs.com/syxchina/p/4150879.html)
+替换 
+```java
+private TestApiService spyTestApiService;
+     @Autowired
+     private TestApiService testApiService;
+
+```
+在 @Before
+  public void initMocks() throws Exception {
+  进行替换
+```java
+
+  ReflectionTestUtils.setField(AopTargetUtils.getTarget(apiService), "testApiService", spyTestApiService);
+  when(spyTestApiService.connect()).thenReturn("ok");
+```

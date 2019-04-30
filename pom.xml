@@ -10,6 +10,8 @@
         <module>20.10_design-patterns</module>
         <module>00.20_custom-exception</module>
         <module>10.03_Mockio_with_testNg</module>
+        <module>10.20_spring_boot_test</module>
+        <module>20.30_Spring_testNg_Cucumber</module>
     </modules>
 
 
@@ -19,6 +21,12 @@
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
         <spring-boot.version>2.0.3.RELEASE</spring-boot.version>
         <testNg.version>6.12</testNg.version>
+        <mockito.version>1.10.19</mockito.version>
+
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+
     </properties>
 
 
@@ -44,7 +52,7 @@
 
 
     <dependencies>
-        <!-- tesNg 需要，每个项目都需要 -->
+        <!-- testNg 每个项目都需要 -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -57,6 +65,16 @@
             <artifactId>spring-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+
+        <!-- mockio 每个项目都需要 -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+
 
 
     </dependencies>
